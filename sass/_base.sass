@@ -1,0 +1,65 @@
+// Breakpoints
+$media: ('small':767px, 'medium': 992px, 'large': 1200px) !default
+
+@mixin useBreakpoint($breakpoint)
+    @each $breakpoints, $size in $media
+        @if $breakpoint == $breakpoints
+            @media screen and (min-width: $size)
+                @content
+
+// Font Stack
+$font-stack: 'Anek Odia', sans-serif
+
+// Colors
+$color-gradient-1: #2b1919
+$color-gradient-2: #223349
+$color-version: #db8471
+$color-headings: #ffbfb1
+$color-subheading-1: #a5b4bd
+$color-subheading-2: #d4a094
+$color-body-text: #fdfdfd
+$color-new: #899ba5
+$color-new-hover: #6f7f86
+$color-view: #4caf6a
+$color-view-hover: #3e945b
+$color-edit: #4caf96
+$color-edit-hover: #3e947e
+$color-delete: #af4c54
+$color-delete-hover: #943e49
+$color-package: #b8c1d4
+
+//
+$color-test: #25ceb2
+
+// Mixins
+@mixin remove-ugly-select-mobile()
+    user-select: none
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+@mixin button-default
+    text-align: center
+    text-decoration: none
+    border-radius: 0.5vw
+    border: none
+    transition: background 500ms
+
+@mixin button-focus-default
+    outline-color: transparent
+    outline-style: none
+
+@mixin button-hover-default
+    transition: background 500ms
+
+// Shared Style
+@mixin fontSize3AndWeight200
+    font-size: 3vw
+    font-weight: 200
+
+//
+body
+    font-family: $font-stack
+    font-weight: 200
+    margin: 0
+    padding: 0
+    letter-spacing: 0.1vw
+    background: linear-gradient(90deg, $color-gradient-1 0%, $color-gradient-2 100%)

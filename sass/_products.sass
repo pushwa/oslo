@@ -1,0 +1,74 @@
+.PackageHeading
+    font-family: $font-stack
+    font-size: 4.3vw
+    font-weight: 200
+    color: $color-package
+    margin: 0 0 1vw 7vw
+
+button
+    font-family: $font-stack
+    font-size: 1.15vw
+    font-weight: 200
+    letter-spacing: 0.1vw
+    color: $color-body-text
+    margin: 2vw 1vw 0 0
+    padding: 1.5vw 3vw 1vw 3vw
+    @include button-default
+    @include remove-ugly-select-mobile
+
+button:focus
+    @include button-focus-default
+
+button:hover
+    @include button-hover-default
+
+.new
+    margin-top: 0vw
+    margin-bottom: 6.9vw
+    margin-left: 7vw
+    background: $color-new
+    &:hover
+        background: $color-new-hover
+
+article
+    width: inherit
+    height: inherit
+    margin: 0
+    padding: 0 28vw 7vw 7vw
+    box-sizing: border-box
+
+    .heading2
+        font-size: 3.3vw
+        font-weight: 200
+        color: $color-headings
+        margin: 0
+
+    .subheading2
+        font-size: 2.1vw
+        font-weight: 200
+        line-height: 3vw
+        color: $color-subheading-2
+        margin: 0 0 1.5vw 0
+
+    p
+        font-size: 1.2vw
+        color: $color-body-text
+        line-height: 2vw
+        margin: 0
+        //@include useBreakpoint('small')
+            //color: $color-test
+
+    .view
+        background: $color-view
+        &:hover
+            background: $color-view-hover
+
+    .edit
+        background: $color-edit
+        &:hover
+            background: $color-edit-hover
+
+    .delete
+        background: $color-delete
+        &:hover
+            background: $color-delete-hover

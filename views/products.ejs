@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@200&family=Lato:wght@300&display=swap');
+    </style>
+    <title>Three.js</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="PackageHeading">Package One</h1>
+        <button class="new">NEW PRODUCT</button>
+        <% data.forEach(function(product) { %>
+            <article>
+              <h1 class="heading2"><%= product.title %></h1>
+              <h1 class="subheading2"><%= product.description %></h1>
+              <p><%= `${product.txt.substring(0, 200)} ...` %></p>
+              <button class="view">VIEW PRODUCT</button>
+              <button class="edit">EDIT PRODUCT</button>
+              <button class="delete">DELETE PRODUCT</button>
+            </article>
+        <%})%>
+    </section>
+
+    <script src="/main.js"></script>
+</body>
+</html>

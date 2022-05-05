@@ -1,0 +1,132 @@
+body {
+  font-family: "Anek Odia", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1vw;
+  background: linear-gradient(90deg, #2b1919 0%, #223349 100%);
+}
+
+section {
+  font-size: 3vw;
+  font-weight: 200;
+  margin-top: 7vw;
+  width: 100%;
+  height: auto;
+}
+section .heading1 {
+  font-size: 3vw;
+  font-weight: 200;
+  color: #ffbfb1;
+  margin: 3.5vw 0 0 7vw;
+  display: inline-block;
+}
+section .version {
+  font-size: 3vw;
+  font-weight: 200;
+  color: #db8471;
+  margin: 0 0 0 7.5vw;
+  display: inline-block;
+}
+section .subheading1 {
+  font-size: 2vw;
+  font-weight: 200;
+  color: #a5b4bd;
+  margin: -1vw 0 2vw 7vw;
+}
+section .mainCanvas {
+  width: inherit;
+  height: 60vw;
+  background-color: rgb(32, 33, 36);
+}
+
+.PackageHeading {
+  font-family: "Anek Odia", sans-serif;
+  font-size: 4.3vw;
+  font-weight: 200;
+  color: #b8c1d4;
+  margin: 0 0 1vw 7vw;
+}
+
+button {
+  font-family: "Anek Odia", sans-serif;
+  font-size: 1.15vw;
+  font-weight: 200;
+  letter-spacing: 0.1vw;
+  color: #fdfdfd;
+  margin: 2vw 1vw 0 0;
+  padding: 1.5vw 3vw 1vw 3vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5vw;
+  border: none;
+  transition: background 500ms;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+button:hover {
+  transition: background 500ms;
+}
+
+.new {
+  margin-top: 0vw;
+  margin-bottom: 6.9vw;
+  margin-left: 7vw;
+  background: #899ba5;
+}
+.new:hover {
+  background: #6f7f86;
+}
+
+article {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0 28vw 7vw 7vw;
+  box-sizing: border-box;
+}
+article .heading2 {
+  font-size: 3.3vw;
+  font-weight: 200;
+  color: #ffbfb1;
+  margin: 0;
+}
+article .subheading2 {
+  font-size: 2.1vw;
+  font-weight: 200;
+  line-height: 3vw;
+  color: #d4a094;
+  margin: 0 0 1.5vw 0;
+}
+article p {
+  font-size: 1.2vw;
+  color: #fdfdfd;
+  line-height: 2vw;
+  margin: 0;
+}
+article .view {
+  background: #4caf6a;
+}
+article .view:hover {
+  background: #3e945b;
+}
+article .edit {
+  background: #4caf96;
+}
+article .edit:hover {
+  background: #3e947e;
+}
+article .delete {
+  background: #af4c54;
+}
+article .delete:hover {
+  background: #943e49;
+}
+
+/*# sourceMappingURL=style.css.map */
